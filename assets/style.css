@@ -1,0 +1,66 @@
+.flex-container {
+  display: flex;
+  background-color: red;
+}
+
+.flex-item {
+  background-color: blue;
+  display: block;
+  flex: 45%;
+  gap: 10px 10px;
+  /* why is the gap not working */
+}
+
+#p1 {
+  background-image: url(https://via.placeholder.com/300?text=Project+One);
+  background-color: purple;
+  height: 500%;
+  /* The height is weird, is this right? should i just bump up the height % */
+}
+
+#p2 {
+  background-image: url(https://via.placeholder.com/300?text=Project+Two);
+  background-color: orange;
+  height: 500%;
+}
+
+#p3 {
+  background-image: url(https://via.placeholder.com/300?text=Project+Three);
+  background-color: green;
+  height: 500%;
+}
+
+#p4 {
+  background-image: url(https://via.placeholder.com/300?text=Project+Four);
+  background-color: yellow;
+  height: 500%;
+}
+
+#flex-aside {
+  display: block;
+  flex-direction: column;
+  order: 2;
+  flex: 10%;
+  /* cant seem to adjust the height at all */
+}
+#flex-header {
+  background-color: pink;
+  display: flex;
+  flex: 45%;
+  /* this flex and the one for the nav seem to be doing literally nothing */
+}
+
+#flex-nav {
+  background-color: deeppink;
+  flex: 55%;
+  align-content: end;
+  flex-flow: row;
+  /* none of the flex properties work here at all */
+}
+
+#flex-footer {
+  flex: 100%;
+  display: flex;
+  background-color: khaki;
+  /* I do not know how to get this to display below the other stuff */
+}
