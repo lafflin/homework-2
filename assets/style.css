@@ -53,6 +53,7 @@ body {
   border-bottom: 5px solid var(--accent);
   border-right: 5px solid var(--accent);
   flex: 1 80%;
+  margin: 1%;
 }
 
 aside {
@@ -65,21 +66,26 @@ header {
   background-color: var(--secondary);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 header nav {
-  display: block;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: flex-end;
 }
 
 footer {
   display: flex;
   background-color: var(--secondary);
+  justify-content: space-between;
 }
 
 footer ul {
   display: flex;
   list-style-type: none;
   flex-direction: row;
+}
+
+footer ul li {
+  justify-content: space-around;
 }
