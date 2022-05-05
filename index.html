@@ -4,27 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale= .0" />
-    <link rel="stylesheet" href=".assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Max McLaughlin's Porfolio</title>
   </head>
   <body>
-    <section id="flex-header">
+    <header>
       Max McLaughlin's Portfolio
-      <nav id="flex-nav">About Me ○ My Work ○ Contact Me</nav>
-    </section>
+      <nav>
+        ○ <a href="#about">About Me</a> ○ <a href="#projects"> My Work</a> ○
+        <a href="#contact-me">Contact Me</a> ○
+        <a href="./resume.md">Resume</a>
+      </nav>
+    </header>
     <div class="flex-container">
-      <!-- should the flex container go here or should it go up on the body tag? seems weird to put it here cause i have to reapply display: flex; -->
-      <aside id="flex-aside">aside</aside>
-      <div class="flex-item">
-        <div id="p1">Example Project 1</div>
-        <div id="p2">Example Project 2</div>
+      <!-- should the flex container go here or should it go up on the body tag? seems weird to put it here cause i have to reapply display: flex; -- did some more work an landed on that I think reapplying display:flex is fine -->
+      <aside id="about"><h1>About Me</h1></aside>
+      <div class="flex-item" id="projects">
+        <div id="p1"><h1>Example Project 1</h1></div>
+        <div id="p2"><h1>Example Project 2</h1></div>
       </div>
       <div class="flex-item">
-        <div id="p3">Example Project 3</div>
-        <div id="p4">Example Project 4</div>
+        <div id="p3"><h1>Example Project 3</h1></div>
+        <div id="p4"><h1>Example Project 4</h1></div>
       </div>
     </div>
-    <footer id="flex-footer">Contact Me</footer>
+    <div id="p5"><h1>Example Project 5</h1></div>
+    <footer>
+      <h1 id="contact-me">Contact Me</h1>
+      <ul>
+        <li>Phone: (925)667-1054</li>
+        <li>Email: maxwelljmack@gmail.com</li>
+        <li><a href="https://github.com/lafflin">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/max-mcla/">LinkedIn</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
