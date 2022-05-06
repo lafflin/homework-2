@@ -54,6 +54,8 @@ body {
   border-right: 5px solid var(--accent);
   flex: 1 80%;
   margin: 1%;
+  align-self: flex-end;
+  order: 1;
 }
 
 aside {
@@ -72,6 +74,7 @@ header {
 header nav {
   flex-wrap: wrap;
   flex-direction: row;
+  font-size: 1.3em;
 }
 
 footer {
@@ -87,5 +90,5 @@ footer ul {
 }
 
 footer ul li {
-  justify-content: space-around;
+  font-size: 1.3em;
 }
