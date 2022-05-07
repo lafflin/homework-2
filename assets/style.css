@@ -1,94 +1,100 @@
 :root {
-  --primary: #34252f;
-  --secondary: #fcdade;
-  --accent: #4b6fa8;
-  --aside: #a4b494;
+	--primary: #34252f;
+	--secondary: #fcdade;
+	--accent: #4b6fa8;
+	--aside: #a4b494;
 }
 
 body {
-  background-color: var(--primary);
+	background-color: var(--primary);
 }
 
 .flex-container {
-  display: flex;
+	display: flex;
+}
+
+.lead-flex-item {
+	display: block;
+	flex: 1 80%;
+	margin: 1%;
 }
 
 .flex-item {
-  display: block;
-  flex: 1 40%;
-  margin: 1%;
-  /* not sure if a apply the flex here or on each individual project id */
+	display: block;
+	flex: 1 40%;
+	margin: 1%;
+	/* not sure if a apply the flex here or on each individual project id */
 }
 
 #p1 {
-  background-image: url(https://via.placeholder.com/300?text=Project+One);
-  flex: 1 40%;
-  border-bottom: 5px solid var(--accent);
-  border-right: 5px solid var(--accent);
+	background-image: url(https://via.placeholder.com/300?text=Project+One);
+	flex: 1 40%;
+	border-bottom: 5px solid var(--accent);
+	border-right: 5px solid var(--accent);
 }
 
 #p2 {
-  background-image: url(https://via.placeholder.com/300?text=Project+Two);
-  flex: 1 40%;
-  border-bottom: 5px solid var(--accent);
-  border-right: 5px solid var(--accent);
+	background-image: url(https://via.placeholder.com/300?text=Project+Two);
+	flex: 1 40%;
+	border-bottom: 5px solid var(--accent);
+	border-right: 5px solid var(--accent);
 }
 
 #p3 {
-  background-image: url(https://via.placeholder.com/300?text=Project+Three);
-  flex: 1 40%;
-  border-bottom: 5px solid var(--accent);
-  border-right: 5px solid var(--accent);
+	background-image: url(https://via.placeholder.com/300?text=Project+Three);
+	flex: 1 40%;
+	border-bottom: 5px solid var(--accent);
+	border-right: 5px solid var(--accent);
 }
 
 #p4 {
-  background-image: url(https://via.placeholder.com/300?text=Project+Four);
-  flex: 1 40%;
-  border-bottom: 5px solid var(--accent);
-  border-right: 5px solid var(--accent);
+	background-image: url(https://via.placeholder.com/300?text=Project+Four);
+	flex: 1 40%;
+	border-bottom: 5px solid var(--accent);
+	border-right: 5px solid var(--accent);
 }
 
 #p5 {
-  background-image: url(https://via.placeholder.com/300?text=Project+Five);
-  border-bottom: 5px solid var(--accent);
-  border-right: 5px solid var(--accent);
-  flex: 1 80%;
-  margin: 1%;
-  align-self: flex-end;
-  order: 1;
+	background-image: url(https://via.placeholder.com/300?text=Project+Five);
+	border-bottom: 5px solid var(--accent);
+	border-right: 5px solid var(--accent);
+	flex: 1 80%;
+	margin: 1%;
+	align-self: flex-end;
+	order: 1;
 }
 
 aside {
-  background-color: var(--aside);
-  order: 3;
-  flex: 1 20%;
+	background-color: var(--aside);
+	order: 3;
+	flex: 1 20%;
 }
 
 header {
-  background-color: var(--secondary);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	background-color: var(--secondary);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 header nav {
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-size: 1.3em;
+	flex-wrap: wrap;
+	flex-direction: row;
+	font-size: 1.3em;
 }
 
 footer {
-  display: flex;
-  background-color: var(--secondary);
-  justify-content: space-between;
+	display: flex;
+	background-color: var(--secondary);
+	justify-content: space-between;
 }
 
 footer ul {
-  display: flex;
-  list-style-type: none;
-  flex-direction: row;
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
 }
 
 footer ul li {
-  font-size: 1.3em;
+	font-size: 1.3em;
 }

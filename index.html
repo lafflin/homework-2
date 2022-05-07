@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale= .0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Max McLaughlin: Web Developer</title>
-  </head>
-  <body>
-    <header>
-      <h1>Max McLaughlin's Portfolio</h1>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects"> My Work</a>
-        <a href="#contact-me">Contact Me</a>
-        <a href="./resume.md">Resume</a>
-      </nav>
-    </header>
-    <div class="flex-container">
-      <!-- should the flex container go here or should it go up on the body tag? seems weird to put it here cause i have to reapply display: flex; -- did some more work an landed on that I think reapplying display:flex is fine -->
-      <aside id="about"><h1>About Me</h1></aside>
-      <div class="flex-item" id="projects">
-        <div id="p1"><h1>Example Project 1</h1></div>
-        <div id="p2"><h1>Example Project 2</h1></div>
-      </div>
-      <div class="flex-item">
-        <div id="p3"><h1>Example Project 3</h1></div>
-        <div id="p4"><h1>Example Project 4</h1></div>
-      </div>
-    </div>
-    <div id="p5"><h1>Example Project 5</h1></div>
-    <footer>
-      <h1 id="contact-me">Contact Me:</h1>
-      <ul>
-        <li>Phone: (925)667-1054</li>
-        <li>Email: maxwelljmack@gmail.com</li>
-        <li><a href="https://github.com/lafflin">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/max-mcla/">LinkedIn</a></li>
-      </ul>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale= .0" />
+		<link rel="stylesheet" href="./assets/style.css" />
+		<title>Max McLaughlin: Web Developer</title>
+	</head>
+	<body>
+		<header>
+			<h1>Max McLaughlin's Portfolio</h1>
+			<nav>
+				<a href="#about">About Me</a>
+				<a href="#projects"> My Work</a>
+				<a href="#contact-me">Contact Me</a>
+				<a href="./resume.md">Resume</a>
+			</nav>
+		</header>
+		<div id="p5"><h1>Example Project 5</h1></div>
+		<div class="flex-container">
+			<!-- should the flex container go here or should it go up on the body tag? seems weird to put it here cause i have to reapply display: flex; -- did some more work an landed on that I think reapplying display:flex is fine -->
+
+			<aside id="about"><h1>About Me</h1></aside>
+			<!-- <div class="lead-flex-item" id="projects">
+				<div id="p5"><h1>Example Project 5</h1></div>
+			</div> -->
+			<div class="flex-item">
+				<div id="p1"><h1>Example Project 1</h1></div>
+				<div id="p2"><h1>Example Project 2</h1></div>
+			</div>
+			<div class="flex-item">
+				<div id="p3"><h1>Example Project 3</h1></div>
+				<div id="p4"><h1>Example Project 4</h1></div>
+			</div>
+		</div>
+		<footer>
+			<h1 id="contact-me">Contact Me:</h1>
+			<ul>
+				<li>Phone: (925)667-1054</li>
+				<li>Email: maxwelljmack@gmail.com</li>
+				<li><a href="https://github.com/lafflin">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/max-mcla/">LinkedIn</a></li>
+			</ul>
+		</footer>
+	</body>
 </html>
