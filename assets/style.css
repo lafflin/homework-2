@@ -11,63 +11,46 @@ body {
 
 .flex-container {
 	display: flex;
-}
-
-.lead-flex-item {
-	display: block;
-	flex: 1 80%;
-	margin: 1%;
+	flex-wrap: wrap;
 }
 
 .flex-item {
 	display: block;
-	flex: 1 40%;
 	margin: 1%;
-	/* not sure if a apply the flex here or on each individual project id */
 }
 
-#p1 {
-	background-image: url(https://via.placeholder.com/300?text=Project+One);
-	flex: 1 40%;
-	border-bottom: 5px solid var(--accent);
-	border-right: 5px solid var(--accent);
-}
-
-#p2 {
-	background-image: url(https://via.placeholder.com/300?text=Project+Two);
-	flex: 1 40%;
-	border-bottom: 5px solid var(--accent);
-	border-right: 5px solid var(--accent);
-}
-
-#p3 {
-	background-image: url(https://via.placeholder.com/300?text=Project+Three);
-	flex: 1 40%;
-	border-bottom: 5px solid var(--accent);
-	border-right: 5px solid var(--accent);
-}
-
+#p1,
+#p2,
+#p3,
 #p4 {
-	background-image: url(https://via.placeholder.com/300?text=Project+Four);
-	flex: 1 40%;
+	background-image: url(https://via.placeholder.com/300?text=Project+One);
+	flex: 1 0 40%;
 	border-bottom: 5px solid var(--accent);
 	border-right: 5px solid var(--accent);
+	min-height: 200px;
 }
 
-#p5 {
-	background-image: url(https://via.placeholder.com/300?text=Project+Five);
+#pmain {
+	background-image: url(https://via.placeholder.com/300?text=Project);
 	border-bottom: 5px solid var(--accent);
 	border-right: 5px solid var(--accent);
 	flex: 1 80%;
-	margin: 1%;
-	align-self: flex-end;
-	order: 1;
+	order: -1;
+	min-height: 426px;
+	/* I would like to (and spent hours trying to) put this project on the very top, with the others below it and the aside to the side but I can not figure out how to do so*/
 }
 
 aside {
 	background-color: var(--aside);
-	order: 3;
+	order: 2;
 	flex: 1 20%;
+}
+
+aside img {
+	margin: 0 auto;
+	display: block;
+	max-width: 50%;
+	max-height: 50%;
 }
 
 header {
@@ -86,7 +69,6 @@ header nav {
 footer {
 	display: flex;
 	background-color: var(--secondary);
-	justify-content: space-between;
 }
 
 footer ul {
@@ -97,4 +79,20 @@ footer ul {
 
 footer ul li {
 	font-size: 1.3em;
+	justify-content: space-between;
+	margin: 5%;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-around;
+}
+/* I Can't get the items to space out nicely, not sure what else to try */
+
+@media screen and (max-width: 768px) {
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+	/* I cannot figure this shit out for the life of me  */
 }
